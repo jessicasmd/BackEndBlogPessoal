@@ -47,7 +47,7 @@ public class Usuario {
 	
 	// Primeiro método Construtor
 
-		public Usuario(long id, String nome, String usuario, String senha) {
+		public Usuario(Long id, String nome, String usuario, String senha) {
 			this.id = id;
 			this.nome = nome;
 			this.usuario = usuario;

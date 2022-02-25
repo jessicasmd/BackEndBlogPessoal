@@ -22,7 +22,6 @@ public class Postagem {
 
 	@Id // é  primary key(id)
 	@GeneratedValue(strategy=GenerationType.IDENTITY) // é auto increment 
-	
 	private Long id;
 	
 	@NotBlank(message = "O atributo título é Obrigatório")

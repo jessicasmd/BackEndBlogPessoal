@@ -20,7 +20,7 @@ public class Tema {
 
 		@Id 
 		@GeneratedValue(strategy=GenerationType.IDENTITY) 
-		private Long id;
+		private long id;
 		
 		@NotBlank(message = "O atributo Descrição é Obrigatória")
 		private String descricao;	
@@ -30,25 +30,15 @@ public class Tema {
 		@JsonIgnoreProperties("tema")
 		private List<Postagem> postagem;
 
-			
 
-		public Tema(Long id,  String descricao) {
-			this.id = id;
-			this.descricao = descricao;
-		}
-
-
-
-		public Long getId() {
+		public long getId() {
 			return id;
 		}
 
 
-
-		public void setId(Long id) {
+		public void setId(long id) {
 			this.id = id;
 		}
-
 
 
 		public String getDescricao() {
@@ -56,11 +46,9 @@ public class Tema {
 		}
 
 
-
 		public void setDescricao(String descricao) {
 			this.descricao = descricao;
 		}
-
 
 
 		public List<Postagem> getPostagem() {
@@ -68,10 +56,8 @@ public class Tema {
 		}
 
 
-
 		public void setPostagem(List<Postagem> postagem) {
 			this.postagem = postagem;
 		}
-
-						
+					
 }
